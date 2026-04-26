@@ -1,0 +1,93 @@
+/* style.css /*
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #2b2b2b;　/*　チャコールブラック　*/
+	color: #b2b2b2;           　/*　ライトグレー　*/
+	/*　和の雰囲気を出すため、明朝体系のフォントを優先　*/
+	font-family: "Sawaradi Mincho", "Yu Mincho", "MS PMincho", serif;
+	line-height: 1.8;
+}
+
+header- {
+	background-color: #3e2723; /*　ダークブラウン　*/
+	padding: 1.2rem 0;
+	border-bottom: 1px solid #4e342e;
+}
+
+.header-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+header h1{
+	margin: 0;
+	font-size: 1.8rem;
+	letter-spacing: 0.1em;
+    color: #3e2723;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 30px
+}
+
+nav a {
+	text-decoration: none;
+	color: #3e2723;
+    font: 500;
+}
+/*　ヒーローエリア　*/
+.hero {
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.hero h2 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+}
+
+/*　作成依頼　*/
+.info {
+	background-color: 1a1a1a;
+	padding: 80px 20px;
+	text-align: center;
+	border-top: 1px solid #3e2723;
+}
+
+.btn {
+	border: 1px solid #d3d3d3;
+	color: #0000ff;
+	padding: 10px  30px;
+}
+
+footer {
+	text-aligon: center;
+	padding: 30px;
+	font-size: 0.9rem;
+}
+
+/*　お問い合わせフォーム全体を中央寄せに設定　*/
+.contact-box {
+	width: 100%; /*横枠いっぱいに広がる準備　*/
+	max-width: 1100px;　/* フォームが広がりすぎないように制限　 */
+	margin: 0 auto; /* 左右余白自動化して中央寄せ  */
+　　text-align: left; /* 中の文字は左揃えを */
+}
+/* 入力欄（input）やボタンを奇麗に整えるための追加設定 */
+.contact-box input,
+contact-box textarea {
+	width: 100%; /* 箱の幅いっぱいに広げる */
+    box-sizing: border-box; /* 枠線を含めて幅を計算する */
+}
