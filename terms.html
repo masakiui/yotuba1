@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>利用規約の確認</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.terms-box {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background: #fafafa;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.checkbox-area {
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 14px;
+    background: #2c6e49;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>利用規約の確認</h1>
+
+<div class="terms-box">
+
+<h2>Webサイト制作 利用規約</h2>
+
+<p>本規約は、Webサイト制作サービス（以下「本サービス」）の利用条件を定めるものです。ご依頼いただいた時点で、本規約に同意したものとみなします。</p>
+
+<hr>
+
+<h3>第1条（サービス内容）</h3>
+<p>本サービスは、Webサイトのデザインおよび制作を行うものです。各プラン内容は事前に提示した内容に基づきます。</p>
+
+<h3>第2条（料金および支払い方法）</h3>
+<p>・料金は事前に提示した金額とします。<br>
+・支払いは前払い制とし、指定の方法（PayPayまたは銀行振込）でお支払いいただきます。<br>
+・支払い完了後、制作を開始します。</p>
+
+<h3>第3条（キャンセル・返金）</h3>
+<p>・制作開始前のキャンセルは全額返金いたします。<br>
+・制作開始後のキャンセルは、進行状況に応じて返金不可または一部返金とします。<br>
+・納品後の返金は対応しておりません。</p>
+
+<h3>第4条（制作期間）</h3>
+<p>制作期間は内容により異なりますが、通常は数日〜2週間程度を目安とします。お客様からの返信遅延により納期が延びる場合があります。</p>
+
+<h3>第5条（修正対応）</h3>
+<p>・修正は各プランに応じた回数まで無料とします（目安：3回まで）。<br>
+・軽微な修正（テキスト変更・色変更・画像差し替え等）に限ります。<br>
+・大幅なデザイン変更や構成変更は別途料金が発生します。</p>
+
+<h3>第6条（納品）</h3>
+<p>・最終確認後、問題がなければ納品とします。<br>
+・納品後の大幅な修正は別料金となります。</p>
+
+<h3>第7条（素材提供）</h3>
+<p>・画像や文章などの素材は原則お客様にてご用意いただきます。<br>
+・こちらで用意する場合は別途料金が発生する場合があります。</p>
+
+<h3>第8条（実績掲載）</h3>
+<p>制作したサイトは、実績としてポートフォリオやSNSに掲載させていただく場合があります。掲載不可の場合は事前にご連絡ください。</p>
+
+<h3>第9条（免責事項）</h3>
+<p>・制作後の集客効果や売上向上を保証するものではありません。<br>
+・本サービス利用による損害については責任を負いかねます。</p>
+
+<h3>第10条（その他）</h3>
+<p>本規約に定めのない事項については、双方協議の上決定するものとします。</p>
+
+<hr>
+
+<p>【制定日】2026年○月○日<br>
+【制作者名】（あなたの名前）</p>
+
+</div>
+
+<div class="checkbox-area">
+<label>
+<input type="checkbox" id="agreeCheck">
+利用規約に同意します
+</label>
+</div>
+
+<button id="submitBtn" disabled>同意して問い合わせへ進む</button>
+
+</div>
+
+<script>
+const checkbox = document.getElementById("agreeCheck");
+const button = document.getElementById("submitBtn");
+
+checkbox.addEventListener("change", function() {
+    button.disabled = !checkbox.checked;
+});
+
+// ボタン押したら次のページへ（例）
+button.addEventListener("click", function() {
+    window.location.href = "contact.html"; // 遷移先を変えてOK
+});
+</script>
+
+</body>
+</html>
